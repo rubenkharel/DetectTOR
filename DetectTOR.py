@@ -20,10 +20,9 @@ def Status():
         print("Printing all the " + y + " sites.")
         for x in range(i, length):
             Live = ver_soup[x]["Status"]
-            if Live.lower == y.lower:
+            if Live.lower() == y.lower():
                 result = ver_soup[x]["Site"]
-
-                print("Index " + str(x) + ".: " + result)
+                print("Index " + str(x) + ". " + result)
     elif userinp == 2:
         y = "Dead"
         print("Printing all the " + y + " sites.")
@@ -31,8 +30,7 @@ def Status():
             Live = ver_soup[x]["Status"]
             if Live.lower() == y.lower():
                 result = ver_soup[x]["Site"]
-
-                print("Index " + str(x) + ".: " + result)
+                print("Index " + str(x) + ". " + result)
     elif userinp == 3:
         y = "Often Dead"
         print("Printing all the " + y + " sites.")
@@ -40,8 +38,7 @@ def Status():
             Live = ver_soup[x]["Status"]
             if Live.lower() == y.lower():
                 result = ver_soup[x]["Site"]
-
-                print("Index " + str(x) + ".: " + result)
+                print("Index " + str(x) + ". " + result)
     else:
         print("invalid input, Closing...")
 def Legit():
@@ -56,7 +53,7 @@ def Legit():
             Live = ver_soup[x]["Legit"]
             if Live.lower() == y.lower():
                 result = ver_soup[x]["Site"]
-                print("Index " + str(x) + ".: " + result)
+                print("Index " + str(x) + ". " + result)
     elif userinp == 2:
         y = "UNVERIFIED"
         print("Printing all the " + y + " sites.")
@@ -64,8 +61,7 @@ def Legit():
             Live = ver_soup[x]["Legit"]
             if Live.lower() == y.lower():
                 result = ver_soup[x]["Site"]
-
-                print("Index " + str(x) + ".: " + result)
+                print("Index " + str(x) + ". " + result)
     elif userinp == 3:
         y = "False"
         print("Printing all the " + y + " sites.")
@@ -73,8 +69,7 @@ def Legit():
             Live = ver_soup[x]["Legit"]
             if Live.lower() == y.lower():
                 result = ver_soup[x]["Site"]
-
-                print("Index " + str(x) + ".: " + result)
+                print("Index " + str(x) + ". " + result)
     else:
         print("invalid input, Closing...")
 
